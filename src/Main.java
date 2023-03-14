@@ -84,7 +84,7 @@ public class Main {
 		int weightBreakfastForGr = amountBananas * weightBanana + (volumeMilk / 100) * weightMilkFor100Ml +
 				amountIceCream * weightIceCream + amountEggs * weightEgg;
 		float weightBreakfastForKg = weightBreakfastForGr / 1000.0f;
-		System.out.println("Вес завтрака составит " + weightBreakfastForGr + " г или " + weightBreakfastForKg + " кг");
+		System.out.println("Вес завтрака составит " + weightBreakfastForGr + " г или " + weightBreakfastForKg + " кг.");
 	}
 
 	static void taskSeven() {
