@@ -90,14 +90,14 @@ public class Main {
 
 	static void taskSeven() {
 		byte requiredLoseWeightKg = 7;
-		short loseWeightForDayGr = 250;
-		int requiredDayForLoseWeight = requiredLoseWeightKg * 1000 / loseWeightForDayGr;
-		System.out.println(requiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
-				+ requiredLoseWeightKg + " кг, если сбрасывать " + loseWeightForDayGr + " г в сутки");
-		loseWeightForDayGr = 500;
-		requiredDayForLoseWeight = requiredLoseWeightKg * 1000 / loseWeightForDayGr;
-		System.out.println(requiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
-				+ requiredLoseWeightKg + " кг, если сбрасывать " + loseWeightForDayGr + " г в сутки");
+		short minLoseWeightForDayGr = 250;
+		short maxLoseWeightForDayGr = 500;
+		int minRequiredDayForLoseWeight = requiredLoseWeightKg * 1000 / minLoseWeightForDayGr;
+		System.out.println(minRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг, если сбрасывать " + minLoseWeightForDayGr + " г в сутки");
+		int maxRequiredDayForLoseWeight = requiredLoseWeightKg * 1000 / maxLoseWeightForDayGr;
+		System.out.println(maxRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг, если сбрасывать " + maxLoseWeightForDayGr + " г в сутки");
 	}
 
 	static void taskEight() {
