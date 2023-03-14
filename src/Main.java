@@ -84,19 +84,23 @@ public class Main {
 		int weightBreakfastForGr = amountBananas * weightBanana + (volumeMilk / 100) * weightMilkFor100Ml +
 				amountIceCream * weightIceCream + amountEggs * weightEgg;
 		float weightBreakfastForKg = weightBreakfastForGr / 1000.0f;
+
 		System.out.println("Вес завтрака составит " + weightBreakfastForGr + " г или " + weightBreakfastForKg + " кг");
 	}
 
 	static void taskSeven() {
 		byte requiredLoseWeightKg = 7;
-		short loseWeightForDayGr = 250;
-		int requiredDayForLoseWeight = requiredLoseWeightKg * 1000 / loseWeightForDayGr;
-		System.out.println(requiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
-				+ requiredLoseWeightKg + " кг, если сбрасывать " + loseWeightForDayGr + " г в сутки");
-		loseWeightForDayGr = 500;
-		requiredDayForLoseWeight = requiredLoseWeightKg * 1000 / loseWeightForDayGr;
-		System.out.println(requiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
-				+ requiredLoseWeightKg + " кг, если сбрасывать " + loseWeightForDayGr + " г в сутки");
+		short minLoseWeightForDayGr = 250;
+		short maxLoseWeightForDayGr = 500;
+		int minRequiredDayForLoseWeight = requiredLoseWeightKg * 1000 / minLoseWeightForDayGr;
+		System.out.println(minRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг, если сбрасывать " + minLoseWeightForDayGr + " г в сутки");
+		int maxRequiredDayForLoseWeight = requiredLoseWeightKg * 1000 / maxLoseWeightForDayGr;
+		System.out.println(maxRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг, если сбрасывать " + maxLoseWeightForDayGr + " г в сутки");
+		int avrRequiredDayForLoseWeight = (minRequiredDayForLoseWeight + maxRequiredDayForLoseWeight) / 2;
+		System.out.println(avrRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг в среднем");
 	}
 
 	static void taskEight() {
