@@ -98,6 +98,9 @@ public class Main {
 		int maxRequiredDayForLoseWeight = requiredLoseWeightKg * 1000 / maxLoseWeightForDayGr;
 		System.out.println(maxRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
 				+ requiredLoseWeightKg + " кг, если сбрасывать " + maxLoseWeightForDayGr + " г в сутки");
+		int avrRequiredDayForLoseWeight = (minRequiredDayForLoseWeight + maxRequiredDayForLoseWeight) / 2;
+		System.out.println(avrRequiredDayForLoseWeight + " дней портебуется для того, чтобы сбросить "
+				+ requiredLoseWeightKg + " кг в среднем");
 	}
 
 	static void taskEight() {
